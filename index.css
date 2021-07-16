@@ -1,0 +1,191 @@
+*{/*seletor universal*/
+    margin: 0;/*margem da pagina*/
+    padding: 0;/*define o preenchimento espaço entre o conteudo e a borda*/
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family: 'Roboto', sans-serif ;
+}
+
+li{
+    list-style: none;
+}
+
+    /***Porcentagem de medidas em CSS***/
+    /***Pixel ,Porcentagem %, em 1 em = 16px.*/
+    /***para fontes usar px e em, para fotos px e % */
+    /***Por exemplo, geralmente utilizamos 18px a 24px para textos quando 
+    falamos que o site vai aparecer no web e celular. =) 
+    pois são absolutas independente do local que a pessoa vai utilizar.*/
+
+
+.header-menu{
+    
+    display: flex;/*determina como o elemento sera renderizado, permite que os elementos fiquem lado a lado*/
+    position: fixed;
+    width: 100%;/*largura do elemento*/
+    padding: 8px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    height:60px;/*altura*/
+    background-color: #5446B2;
+
+}
+.header-menu nav{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;/*alinha os elementos*/
+}
+
+.lista-menu{
+    display: flex;
+    justify-content:space-evenly ;/*alinha os itens*/
+    width: 50%;
+    list-style: none;
+    align-items: center;
+}
+.lista-menu li>a{
+
+    color: #DCD6FF;
+    font-size: 18px;
+    text-decoration: inherit;/*tira a linha*/
+
+}
+/*.div-img{
+    position: absolute;
+    top:20%;
+    left: 45%;
+    border: 3px dashed purple;/*borda tracejada
+}*/
+.principal{
+    display: flex;
+    background-color: #BAB0FF;
+    height: 100vh;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 960px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+
+.subcontainer-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.formacao-container{
+
+    display: flex;
+    background-color: #DCD6FF;
+    height:  auto;
+}
+
+img{
+    border-radius: 50%;
+    width: 15%;
+}
+.nome {
+    font-size: 36px;
+    color: #160966;
+    font-weight: 700;
+    height: 45px;
+
+}
+.profissao{
+    font-size: 22px;
+    color: #8275D9;
+    height: 60px
+    
+    
+}
+.texto-sobre {
+
+    font-size: 20px;
+    line-height: 32px;
+}
+.topico-principal {
+    font-size: 28px;
+    color:30228c;
+}
+.lista-item{
+    padding: 32px;
+}
+.lista-item ul li{
+    margin-bottom: 20px;
+}
+.descricao-curso  {
+
+    font-size: 16px;
+    margin-top: 5px;
+    line-height: 20px;
+    color: #8275D9;
+    font-weight: 300;
+}
+
+.article-lista {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+.titulo {
+    margin-bottom: 5px;
+    font-size: 20px;
+    color:#8275D9 ;
+    font-weight: 600;
+}
+.footer {
+    background-color: #5446B2;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+}
+.lista-footer li{
+
+    color: #DCD6FF;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+.estilo-icon {
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 622px) {
+    .lista-menu {
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+/*Paleta de cores
+
+Variações claras
+#30228C
+#5446B2
+#8275D9
+#BAB0FF
+#DCD6FF
+
+Variações Escuras
+#30228C
+#160966
+#080040
+#03001A
+#000000
+
+*/
