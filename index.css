@@ -143,6 +143,7 @@ img{
     font-size: 20px;
     color:#8275D9 ;
     font-weight: 600;
+    
 }
 .footer {
     background-color: #5446B2;
@@ -159,6 +160,11 @@ img{
     display: flex;
     align-items: center;
     
+}
+.lista-footer li>a{
+    color: #DCD6FF;
+    font-size: 18px;
+    text-decoration: inherit;/*tira a linha*/
 }
 .estilo-icon {
     font-size: 32px;
